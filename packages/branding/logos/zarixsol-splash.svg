@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="splash-bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <filter id="splash-glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#splash-bg)"/>
+
+  <!-- Ambient glow effect -->
+  <circle cx="400" cy="280" r="180" fill="#7C3AED" opacity="0.06"/>
+  <circle cx="400" cy="280" r="100" fill="#A855F7" opacity="0.04"/>
+
+  <!-- Logo (centered) -->
+  <g transform="translate(400, 270)" filter="url(#splash-glow)">
+    <image href="zarixsol-logo_dark.svg" x="-92" y="-20" width="184" height="40"/>
+  </g>
+
+  <!-- Tagline -->
+  <text x="400" y="330" font-family="'Inter', sans-serif" font-size="13" font-weight="500" text-anchor="middle" letter-spacing="0.25em" fill="#A855F7" opacity="0.8">AI DEV STUDIO</text>
+
+  <!-- Loading dots -->
+  <g transform="translate(400, 380)">
+    <circle cx="-16" cy="0" r="4" fill="#7C3AED" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+    <circle cx="0" cy="0" r="4" fill="#7C3AED" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite" begin="0.3s"/>
+    </circle>
+    <circle cx="16" cy="0" r="4" fill="#7C3AED" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite" begin="0.6s"/>
+    </circle>
+  </g>
+</svg>

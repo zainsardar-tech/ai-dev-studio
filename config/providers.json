@@ -1,0 +1,23 @@
+{
+  "providers": [
+    {
+      "name": "openai",
+      "enabled": true,
+      "models": ["gpt-4o", "gpt-4.1", "o3", "o4-mini"],
+      "defaultModel": "gpt-4o"
+    },
+    {
+      "name": "anthropic",
+      "enabled": true,
+      "models": ["claude-sonnet-4", "claude-opus-4", "claude-haiku-3.5"],
+      "defaultModel": "claude-sonnet-4"
+    },
+    {
+      "name": "ollama",
+      "enabled": false,
+      "baseUrl": "http://localhost:11434",
+      "models": ["llama3", "mistral", "codellama"],
+      "defaultModel": "llama3"
+    }
+  ]
+}

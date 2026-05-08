@@ -1,0 +1,27 @@
+{
+  "name": "@zarixsol/services",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/main.js",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@zarixsol/core": "workspace:*",
+    "@zarixsol/engine": "workspace:*",
+    "express": "^5.2.0",
+    "ws": "^8.20.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/ws": "^8.18.1",
+    "@types/cors": "^2.8.17",
+    "typescript": "^5.8.0"
+  }
+}

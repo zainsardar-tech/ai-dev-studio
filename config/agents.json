@@ -1,0 +1,16 @@
+{
+  "agents": [
+    {
+      "name": "Build Agent",
+      "permissions": ["read", "write", "execute"],
+      "description": "Full file system access, terminal execution, code generation and modification",
+      "default": true
+    },
+    {
+      "name": "Plan Agent",
+      "permissions": ["read"],
+      "description": "Read-only, architecture planning, analysis mode",
+      "default": false
+    }
+  ]
+}

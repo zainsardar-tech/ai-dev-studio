@@ -1,0 +1,28 @@
+{
+  "name": "zarixsol-ai-dev-studio",
+  "private": true,
+  "description": "Zarixsol AI Dev Studio — White-labeled AI Desktop Development Environment",
+  "scripts": {
+    "dev": "concurrently \"pnpm dev:bridge\" \"pnpm dev:ui\"",
+    "dev:bridge": "pnpm --filter @zarixsol/services start",
+    "dev:ui": "pnpm --filter @zarixsol/ui dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean",
+    "setup": "pnpm install && turbo run build",
+    "format": "prettier --write '**/*.{ts,tsx,json,css,md}'",
+    "start": "pnpm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "turbo": "^2.9.12",
+    "prettier": "^3.8.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@11.1.1"
+}

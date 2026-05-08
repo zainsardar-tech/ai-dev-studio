@@ -1,0 +1,26 @@
+{
+  "name": "@zarixsol/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Zarixsol AI Dev Studio — Electron Shell",
+  "main": "dist/electron/main.js",
+  "scripts": {
+    "dev": "pnpm run build:electron && concurrently \"pnpm run dev:electron\" \"pnpm run dev:ui\"",
+    "dev:electron": "electron .",
+    "dev:ui": "pnpm run --filter @zarixsol/ui dev",
+    "build": "tsc -p tsconfig.electron.json",
+    "build:electron": "tsc -p tsconfig.electron.json",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@zarixsol/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "electron": "^42.0.0",
+    "electron-builder": "^26.8.0",
+    "typescript": "^5.8.0",
+    "concurrently": "^9.0.0"
+  }
+}

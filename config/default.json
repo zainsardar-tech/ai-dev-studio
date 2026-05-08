@@ -1,0 +1,28 @@
+{
+  "app": {
+    "name": "Zarixsol AI Dev Studio",
+    "version": "0.1.0",
+    "workspaceDir": "~/ZarixsolWorkspace",
+    "bridgePort": 3456,
+    "openCodePort": 9876
+  },
+  "ui": {
+    "theme": "dark",
+    "sidebarCollapsed": false,
+    "fontSize": 14,
+    "fontFamily": "Inter"
+  },
+  "editor": {
+    "tabSize": 2,
+    "wordWrap": "on",
+    "minimap": false,
+    "fontSize": 13,
+    "fontFamily": "JetBrains Mono"
+  },
+  "terminal": {
+    "fontSize": 13,
+    "fontFamily": "JetBrains Mono",
+    "cursorStyle": "block",
+    "theme": "dark"
+  }
+}
